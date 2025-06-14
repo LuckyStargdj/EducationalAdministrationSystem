@@ -67,16 +67,9 @@ void MainWindow::setupUI() {
     titleFont.setBold(true);
     titleLabel->setFont(titleFont);
 
-    // 登录按钮
-    QPushButton* loginButton = new QPushButton("退出", m_dashboard);
-    loginButton->setFixedSize(150, 50);
-    connect(loginButton, &QPushButton::clicked, this, &MainWindow::onLogout);
-
     // 添加部件到布局
     dashboardLayout->addStretch();
     dashboardLayout->addWidget(titleLabel);
-    dashboardLayout->addSpacing(40);
-    dashboardLayout->addWidget(loginButton, 0, Qt::AlignCenter);
     dashboardLayout->addStretch();
 
     m_dashboard->setLayout(dashboardLayout);
