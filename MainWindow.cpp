@@ -106,8 +106,8 @@ void MainWindow::setupMenu() {
 
     QAction* exportAction = new QAction(QIcon("./icons/export.png"), "导出数据", this);
     QAction* importAction = new QAction(QIcon("./icons/import.png"), "导入数据", this);
-    QAction* logoutAction = new QAction("注销", this);
-    QAction* exitAction = new QAction("退出", this);
+    QAction* logoutAction = new QAction(QIcon("./icons/logout.png"), "注销", this);
+    QAction* exitAction = new QAction(QIcon("./icons/exit.png"), "退出", this);
 
     fileMenu->addAction(exportAction);
     fileMenu->addAction(importAction);
